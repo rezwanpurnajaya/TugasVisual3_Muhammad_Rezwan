@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GapoktanForm</class>
+ <widget class="QWidget" name="GapoktanForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>380</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Gapoktan (Sederhana)</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     
+<item row="0" column="0"><widget class="QLabel" name="lblId"><property name="text"><string>ID Gapoktan</string></property></widget></item>
+<item row="0" column="1"><widget class="QSpinBox" name="id_gapoktan"><property name="enabled"><bool>false</bool></property><property name="maximum"><number>2147483647</number></property></widget></item>
+
+<item row="1" column="0"><widget class="QLabel" name="lblNama"><property name="text"><string>Nama</string></property></widget></item>
+<item row="1" column="1"><widget class="QLineEdit" name="nama_gapoktan"/></item>
+
+<item row="2" column="0"><widget class="QLabel" name="lblKetua"><property name="text"><string>Ketua</string></property></widget></item>
+<item row="2" column="1"><widget class="QLineEdit" name="ketua"/></item>
+
+<item row="3" column="0"><widget class="QLabel" name="lblKontak"><property name="text"><string>Kontak</string></property></widget></item>
+<item row="3" column="1"><widget class="QLineEdit" name="kontak"/></item>
+
+<item row="4" column="0"><widget class="QLabel" name="lblIdLokasi"><property name="text"><string>ID Lokasi</string></property></widget></item>
+<item row="4" column="1"><widget class="QLineEdit" name="id_lokasi"/></item>
+
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Simpan</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Bersihkan</string></property></widget></item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeHint"><size><width>40</width><height>20</height></size></property>
+      </spacer>
+     </item>
+     <item><widget class="QPushButton" name="btnClose"><property name="text"><string>Tutup</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
