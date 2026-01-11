@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>900</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>App Pertanian</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="labelWelcome">
+      <property name="text"><string>APP PERTANIAN (db_2310010299)</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelHint">
+      <property name="text"><string>Pilih menu di atas untuk membuka form data.</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+     </widget>
+    </item>
+    <item><spacer name="verticalSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property></spacer></item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect><x>0</x><y>0</y><width>900</width><height>25</height></rect>
+   </property>
+   <widget class="QMenu" name="menuDATA_MASTER">
+    <property name="title"><string>DATA MASTER</string></property>
+    <addaction name="actionDATA_LOKASI"/>
+    <addaction name="actionDATA_GAPOKTAN"/>
+    <addaction name="actionDATA_POKTAN"/>
+    <addaction name="actionDATA_PETANI"/>
+    <addaction name="actionDATA_PENYULUH"/>
+   </widget>
+   <addaction name="menuDATA_MASTER"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDATA_LOKASI"><property name="text"><string>DATA LOKASI</string></property></action>
+  <action name="actionDATA_GAPOKTAN"><property name="text"><string>DATA GAPOKTAN</string></property></action>
+  <action name="actionDATA_POKTAN"><property name="text"><string>DATA POKTAN</string></property></action>
+  <action name="actionDATA_PETANI"><property name="text"><string>DATA PETANI</string></property></action>
+  <action name="actionDATA_PENYULUH"><property name="text"><string>DATA PENYULUH</string></property></action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

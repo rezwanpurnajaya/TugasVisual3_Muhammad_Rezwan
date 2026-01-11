@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>600</height></rect></property><property name="minimumSize"><size><width>900</width><height>600</height></size></property><property name="windowTitle"><string>Data Penyuluh</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="text"><string>Data Penyuluh</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="hlayoutMain">
+     <item>
+      <widget class="QGroupBox" name="groupInput">
+       <property name="title"><string>Input Data</string></property>
+       <layout class="QVBoxLayout" name="vlayoutInput">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+      <widget class="QLabel" name="label_EditId">
+       <property name="text"><string>ID Penyuluh</string></property>
+      </widget>
+     </item>
+    <item row="0" column="1">
+      <widget class="QLineEdit" name="EditId" />
+     </item>
+    <item row="1" column="0">
+      <widget class="QLabel" name="label_EditNama">
+       <property name="text"><string>Nama</string></property>
+      </widget>
+     </item>
+    <item row="1" column="1">
+      <widget class="QLineEdit" name="EditNama" />
+     </item>
+    <item row="2" column="0">
+      <widget class="QLabel" name="label_EditAlamat">
+       <property name="text"><string>Alamat</string></property>
+      </widget>
+     </item>
+    <item row="2" column="1">
+      <widget class="QLineEdit" name="EditAlamat" />
+     </item>
+    <item row="3" column="0">
+      <widget class="QLabel" name="label_ComboStatus">
+       <property name="text"><string>Status</string></property>
+      </widget>
+     </item>
+    <item row="3" column="1">
+      <widget class="QComboBox" name="ComboStatus">
+        <item><property name="text"><string>PNS</string></property></item>
+        <item><property name="text"><string>Honorer</string></property></item>
+        <item><property name="text"><string>Kontrak</string></property></item>
+    </widget>
+     </item>
+    <item row="4" column="0">
+      <widget class="QLabel" name="label_EditSubsektor">
+       <property name="text"><string>Subsektor</string></property>
+      </widget>
+     </item>
+    <item row="4" column="1">
+      <widget class="QLineEdit" name="EditSubsektor" />
+     </item>
+    <item row="5" column="0">
+      <widget class="QLabel" name="label_EditTglMulai">
+       <property name="text"><string>Tgl Mulai</string></property>
+      </widget>
+     </item>
+    <item row="5" column="1">
+      <widget class="QLineEdit" name="EditTglMulai"><property name="placeholderText"><string>YYYY-MM-DD</string></property></widget>
+     </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hlayoutButtons">
+          <item><widget class="QPushButton" name="BtnSimpan"><property name="text"><string>Simpan</string></property></widget></item>
+          <item><widget class="QPushButton" name="BtnUbah"><property name="text"><string>Ubah</string></property></widget></item>
+          <item><widget class="QPushButton" name="BtnHapus"><property name="text"><string>Hapus</string></property></widget></item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="vlayoutTable">
+       <item><widget class="QLineEdit" name="lineCari"><property name="placeholderText"><string>Cari...</string></property></widget></item>
+       <item>
+        <widget class="QTableWidget" name="tblPenyuluh">
+         <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+         <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+         <property name="selectionMode"><enum>QAbstractItemView::SingleSelection</enum></property>
+      <column>
+       <property name="text"><string>ID</string></property>
+      </column>
+      <column>
+       <property name="text"><string>Nama</string></property>
+      </column>
+      <column>
+       <property name="text"><string>Alamat</string></property>
+      </column>
+      <column>
+       <property name="text"><string>Status</string></property>
+      </column>
+      <column>
+       <property name="text"><string>Subsektor</string></property>
+      </column>
+      <column>
+       <property name="text"><string>Tgl Mulai</string></property>
+      </column>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupReport">
+     <property name="title"><string>Cetak Laporan</string></property>
+     <layout class="QHBoxLayout" name="hlayoutReport">
+      <item><widget class="QComboBox" name="comboFilter">
+        <item><property name="text"><string>Semua</string></property></item>
+      </widget></item>
+      <item><widget class="QLineEdit" name="txtFilter"><property name="placeholderText"><string>Nilai filter (jika diperlukan)</string></property></widget></item>
+      <item><widget class="QPushButton" name="btnCetak"><property name="text"><string>Cetak</string></property></widget></item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>

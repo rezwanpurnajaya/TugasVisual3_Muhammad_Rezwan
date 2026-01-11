@@ -1,0 +1,10 @@
+[project]
+name = "App Pertanian"
+
+[tool.pyside6-project]
+files = ["main.py", "crud.py", "form.ui",
+         "Lokasi.py", "lokasi.ui",
+         "Gapoktan.py", "gapoktan.ui",
+         "Poktan.py", "poktan.ui",
+         "Petani.py", "petani.ui",
+         "Penyuluh.py", "penyuluh.ui"]
