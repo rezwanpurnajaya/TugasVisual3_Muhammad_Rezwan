@@ -1,5 +1,0 @@
-[project]
-name = "PySide Project"
-
-[tool.pyside6-project]
-files = ["LokasiForm.ui", "PenyuluhForm.ui", "PetaniForm.ui", "PoktanForm.ui", "crud.py", "gapoktanForm.ui", "gapoktan_form.py", "lokasi_form.py", "main.py", "main.ui", "penyuluh_form.py", "petani_form.py", "poktan_form.py"]
